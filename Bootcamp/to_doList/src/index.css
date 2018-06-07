@@ -1,0 +1,12 @@
+body {
+  font-size: 30px;
+  color:limegreen;
+  margin: 0;
+  padding: 0;
+  font-family: monospace;
+  font-variant: small-caps;
+  word-spacing: -10px;
+}
+html{
+  background-color: #555;
+}
