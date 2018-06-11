@@ -5,18 +5,36 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <title> retro Jukebox</title>
   </head>
+
+
   <div>
+      <img src="record.png" class="App-logo" alt="logo" />
+
     <h1> JUKEBOX </h1>
+
     <h2> JamJam your heart out</h2>
   </div>
 
 <div class="audioPlayer">
- <!--  <img src="images/play.png" width="30" onclick="playAudio()"> -->
- <button onclick="playAudio()" type="button">Play</button>
+    <audio id="myAudio" controls>
+      <source src="./music/sue.mp3" type="audio/mpeg">
+    </audio>
 
-<button onclick="pauseAudio()" type="button">Pause</button>
+     <button onclick="playAudio()" type="button">Play Audio</button>
+    <button onclick="pauseAudio()" type="button">Pause Audio</button> 
+  </div>
 
-  <audio controls>
-    <source src="music/boynamedsue.mp3" type="audio/mpeg">
-  </audio>
+  <script>
+    var x = document.getElementById("myAudio"); 
+
+    function playAudio() { 
+      x.play(); 
+    } 
+
+    function pauseAudio() { 
+      x.pause(); 
+    }
+}
+  </script>
+
 </html>
