@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<meta charset="UTF-8">
+<h1>Super Awesome Grocery List</h1>
+
+<!-- CSS (load bootstrap from a CDN) -->
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+<style>
+    h1{
+      margin: auto;
+      font-family:monospace;
+      color: blue;
+      font-size: 30px;
+      max-width: 500px;
+      margin: auto;
+
+
+    }
+    body{
+      padding-top:50px;
+     }
+     ul{
+       margin-top: 11%;
+       align-content: center;
+       color: black;
+     }
+     li{
+       margin-top: 5%;
+       color:green;
+       font-size: 20px;
+     }
+     .container{
+       max-width: 400px;
+       margin: auto;
+     }
+     .stores{
+       text-decoration-style: none;
+     }
+
+</style>
+
+
+<body>
+<div class= "container">
+  <ul class = 'stores'>
+  		<% for(var i = 0; i < data.groceries.length; i++) { %>
+          <li> <%= data.groceries[i].store %> </li>
+          <ul>
+            <% for(var j = 0; j < data.groceries[i].list.length; j++){ %>
+  				        <li> <%= data.groceries[i].list[j] %> </li>
+              <% } %>
+              </ul>
+  		<% } %>
+  </ul>
+</div>
+
+</body>
+</html>
