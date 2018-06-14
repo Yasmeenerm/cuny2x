@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<meta charset="UTF-8">
+
+<!-- CSS (load bootstrap from a CDN) -->
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+<style>
+    html{
+      background-color: #dddddd;
+    }
+    head{
+      background-color: white;
+    }
+    h1{
+      align-content: center;
+      margin: auto;
+      font-family:monospace;
+      color: black;
+      font-size: 30px;
+      max-width: 400px;
+      margin: auto;
+      padding-left: 20px;
+    }
+    body{
+      padding-top:50px;
+     }
+     ul{
+       margin-top: 11%;
+       align-content: center;
+       color: black;
+     }
+     li{
+       margin-top: 5%;
+       color:green;
+       font-size: 20px;
+     }
+     .container2{
+       margin-top: 20px;
+       max-width: 400px;
+       border-width: 1px;;
+       border-radius: 2px;
+       margin-left: 37%;
+     }
+     .container{
+       margin-top: 20px;
+       max-width: 400px;
+       border-width: 1px;;
+       border: yellow;
+       border-radius: 2px;
+       border-style: ridge;
+       background-color: #262525;
+     }
+
+     a{
+       color:white;
+     }
+
+</style>
+
+<div class ="container2">
+    <h1>CARS of our TIME</h1>
+</div>
+
+<body>
+  <div class= "container">
+      <% cars.forEach((car) => {  %>
+          <a href="/car/<%=car.id %>">
+            <h4><%=car.name %></h4>
+          </a>
+      <% }) %>
+  </div>
+
+</body>
+</html>

@@ -28,7 +28,7 @@ function followed(eventMsg) {
   console.log("follow event")
   var name = eventMsg.source.name;
   var screenName =eventMsg.source.screen_name;
-  followed_post('@' + screenName +  'Thank you for following, Help make a difference feed a hungry child today @islamicrelief');
+  followed_post('@' + screenName +  'Thank you for following, Help make a difference feed a hungry child today @islamicrelief @ICRC_ye @monarelief ‏@purehands2 @UNICEF_Yemen ‏');
 }
 
 /////////////////////////////////////////
